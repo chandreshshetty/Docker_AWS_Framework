@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="test.OrderDetailsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getSingleOrderDetails"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- test.OrderDetailsTest -->
+      <class name="test.MyAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifymyAccountTabVerify"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- test.MyAccountTest -->
+      <class name="test.LoginTest">
+        <methods>
+          <include name="loginToSite"/>
+          <include name="tearDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
